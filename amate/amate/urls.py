@@ -15,7 +15,7 @@ Including another URLconf
 """
 from xml.dom.minidom import Document
 from django.contrib import admin
-from django.urls import path
+from django.urls import path,include
 from amate.views import index
 from Productos.views import Productos
 from django.conf import settings
@@ -24,8 +24,9 @@ from django.conf.urls.static import static
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('index/', index, name='index'),
-    path('products/', Productos, name = 'products'),
+    path('products/', include('Productos.urls'))
 ]
 
 if settings.DEBUG:
     urlpatterns += static(settings.MEDIA_URL, document_root = settings.MEDIA_ROOT)
+    urlpatterns += static(settings.STATIC_URL, document_root = settings.STATIC_ROOT)
