@@ -8,18 +8,19 @@
     <div class="productosMates">
         {%for producto in productos%}
             {% if producto.category == 'mate' %}
-            <div class="card">
-                <div class="cardImg">
-                    <img src="{{ producto.image.url }}" alt="{{producto.name}}">
+            <div class="card mb-3" style="max-width: 540px;">
+                <div class="row g-0">
+                <div class="col-md-4">
+                    <img src="{{ producto.image.url }}" class="img-fluid rounded-start" alt="{{producto.name}}">
                 </div>
-                <div class="cardBody">
-                    <h3 class="cardTitle">
-                        {{producto.name}} 
-                    </h3>
-                    <p class="cardText">
-                        {{producto.description}}
-                    </p>
-                    <p class="cardPrice">${{producto.price}}</p>
+                <div class="col-md-8">
+                    <div class="card-body">
+                    <h5 class="card-title">{{producto.name}}</h5>
+                    <p class="card-text">{{producto.description}}</p>
+                    <p class="card-text cardPrice"><small class="text-muted">${{producto.price}}</small></p>
+                    <a href="#" class="btn btn-primary">comprar</a>
+                    </div>
+                </div>
                 </div>
             </div>
             {%endif%}
@@ -32,18 +33,19 @@
     <div class="productosTermos">
         {%for producto in productos%}
             {% if producto.category == 'termo' %}
-            <div class="card">
-                <div class="cardImg">
-                    <img src="{{ producto.image.url }}" alt="{{producto.name}}">
+            <div class="card mb-3" style="max-width: 540px;">
+                <div class="row g-0">
+                <div class="col-md-4">
+                    <img src="{{ producto.image.url }}" class="img-fluid rounded-start" alt="{{producto.name}}">
                 </div>
-                <div class="cardBody">
-                    <h3 class="cardTitle">
-                        {{producto.name}} 
-                    </h3>
-                    <p class="cardText">
-                        {{producto.description}}
-                    </p>
-                    <p class="cardPrice">${{producto.price}}</p>
+                <div class="col-md-8">
+                    <div class="card-body">
+                    <h5 class="card-title">{{producto.name}}</h5>
+                    <p class="card-text">{{producto.description}}</p>
+                    <p class="card-text cardPrice"><small class="text-muted">${{producto.price}}</small></p>
+                    <a href="#" class="btn btn-primary">comprar</a>
+                    </div>
+                </div>
                 </div>
             </div>
             {%endif%}
@@ -54,18 +56,19 @@
     <div class="productosCombos">
         {%for producto in productos%}
             {% if producto.category == 'combo' %}
-            <div class="card">
-                <div class="cardImg">
-                    <img src="{{ producto.image.url }}" alt="{{producto.name}}">
+            <div class="card mb-3" style="max-width: 540px;">
+                <div class="row g-0">
+                <div class="col-md-4">
+                    <img src="{{ producto.image.url }}" class="img-fluid rounded-start" alt="{{producto.name}}">
                 </div>
-                <div class="cardBody">
-                    <h3 class="cardTitle">
-                        {{producto.name}} 
-                    </h3>
-                    <p class="cardText">
-                        {{producto.description}}
-                    </p>
-                    <p class="cardPrice">${{producto.price}}</p>
+                <div class="col-md-8">
+                    <div class="card-body">
+                    <h5 class="card-title">{{producto.name}}</h5>
+                    <p class="card-text">{{producto.description}}</p>
+                    <p class="card-text cardPrice"><small class="text-muted">${{producto.price}}</small></p>
+                    <a href="#" class="btn btn-primary">comprar</a>
+                    </div>
+                </div>
                 </div>
             </div>
             {%endif%}
@@ -76,18 +79,19 @@
     <div class="productosBombillas">
         {%for producto in productos%}
             {% if producto.category == 'bombilla' %}
-            <div class="card">
-                <div class="cardImg">
-                    <img src="{{ producto.image.url }}" alt="{{producto.name}}">
+            <div class="card mb-3" style="max-width: 540px;">
+                <div class="row g-0">
+                <div class="col-md-4">
+                    <img src="{{ producto.image.url }}" class="img-fluid rounded-start" alt="{{producto.name}}">
                 </div>
-                <div class="cardBody">
-                    <h3 class="cardTitle">
-                        {{producto.name}} 
-                    </h3>
-                    <p class="cardText">
-                        {{producto.description}}
-                    </p>
-                    <p class="cardPrice">${{producto.price}}</p>
+                <div class="col-md-8">
+                    <div class="card-body">
+                    <h5 class="card-title">{{producto.name}}</h5>
+                    <p class="card-text">{{producto.description}}</p>
+                    <p class="card-text cardPrice"><small class="text-muted">${{producto.price}}</small></p>
+                    <a href="#" class="btn btn-primary">comprar</a>
+                    </div>
+                </div>
                 </div>
             </div>
             {%endif%}
