@@ -1,1 +1,19 @@
 {% extends 'base.html' %}
+{% block titulo %}
+    home
+{% endblock %}
+{% block contenido %}
+
+{% for publicacion in publicaciones %}
+    <div class="publicacion">
+        <div class="imgBody">
+            <img src="{{ publicacion.image.url }}" alt="{{publicacion.title}}">
+        </div>
+        <div class="textBody">
+            <h3>{{ publicacion.title }}</h3>
+            <p>{{publicacion.text}}</p>
+            <a class="enlaceBody" href="#">ver mas</a>
+        </div>
+    </div>
+{% endfor %}
+{% endblock %}

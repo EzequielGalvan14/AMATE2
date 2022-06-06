@@ -43,6 +43,7 @@ BASE_APPS = [
 MY_APPS = [
     'amate',
     'Productos',
+    'Home',
 ]
 
 THIRD_APPS = [
